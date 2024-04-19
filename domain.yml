@@ -1,0 +1,101 @@
+version: "2.0"
+
+intents:
+  - greet
+  - universities
+  - inquire_programs
+  - inform_program_interest
+  - inform_location
+  - inquire_campus_life
+  - inform_campus_aspect
+  - inquire_financial_aid
+  - inform_financial_aid_aspect
+  - affirm
+  - goodbye
+  - fallback
+
+entities:
+  - university
+  - program
+  - location
+  - aspect
+  - eligibility
+
+slots:
+  university:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: university
+
+  program:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: program
+  location:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: location
+  aspect:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: aspect
+  eligibility:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: eligibility
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+
+  utter_programs_info:
+    - text: "Sure! I can help you with that. What field of study are you interested in?"
+
+  utter_location_info:
+    - text: "Got it! I'll find information on programs available in the {{location}} area."
+
+  utter_campus_life_info:
+    - text: "Certainly! Campus life is vibrant. What aspect of campus life are you interested in?"
+
+  utter_campus_aspect_info:
+    - text: "Sure thing! Let me find information on {{aspect}} at universities in your area."
+
+  utter_financial_aid_info:
+    - text: "Financial aid is important. Are you looking for specific information?"
+
+  utter_financial_aid_aspect_info:
+    - text: "Understood! I'll search for information on {{aspect}} for {{eligibility}} students."
+
+  utter_more_info:
+    - text: "Great! Let me know if you need more information."
+
+  utter_university_programs:
+    - text: "Here are the programs offered by {university}:\n{programs}"
+
+  utter_default:
+    - text: "I'm sorry, I didn't understand. Can you please rephrase?"
+
+  utter_goodbye:
+    - text: "Goodbye! Feel free to reach out if you have more questions."
+  utter_universities:
+    - text: "there are 15 recognised Universities in Zimbabwe which are {university}"
+
+actions:
+  - action_query_programs
+  - action_query_location
+  - action_query_campus_life
+  - action_query_campus_aspect
+  - action_query_financial_aid
+  - action_query_financial_aid_aspect
+  - utter_iamabot
+  - action_query_universities
+  - action_query_university_programs
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

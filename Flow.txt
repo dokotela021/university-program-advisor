@@ -1,0 +1,31 @@
+## User Flow: Choosing a University
+
+1. User: Hi!
+   Bot: Hello! How can I assist you today?
+
+2. User: I'm interested in studying at a university. Can you provide me with some information?
+   Bot: Of course! What aspects of university life are you particularly interested in? For example, programs offered, campus life, financial aid, etc.
+
+3. User: I'd like to know about the programs offered.
+   Bot: Great choice! Are you interested in any specific field of study?
+
+4. User: Yes, I'm interested in computer science.
+   Bot: Wonderful! I can provide you with information on computer science programs. Where are you located, or do you have any preferences for the location of the university?
+
+5. User: I'm in New York.
+   Bot: Got it! I'll find information on computer science programs offered in New York.
+
+6. User: Can you also tell me about the campus life?
+   Bot: Absolutely! Campus life is an important aspect. Are you interested in extracurricular activities, student organizations, or anything specific?
+
+7. User: Yes, I'd like to know about student organizations.
+   Bot: Excellent! I'll gather information on student organizations at universities in New York.
+
+8. User: What about financial aid?
+   Bot: Financial aid is crucial. Do you have any specific questions about financial aid eligibility or scholarship opportunities?
+
+9. User: I'm interested in learning about scholarships for low-income students.
+   Bot: Understood! I'll search for information on scholarships available for low-income students in New York.
+
+10. User: Thank you for the information! I'll consider my options and get back to you if I have more questions.
+    Bot: You're welcome! Feel free to reach out anytime if you need further assistance. Good luck with your university search!
